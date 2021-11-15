@@ -1,11 +1,11 @@
 -- the following values must satisfy the condtions (let x be the frequency) 
--- x ≥ 0.0
+-- x ≥ 0.0 (0.1 -> 1)
 -- x must be a float type
 
 local config = {
-    pedFrequency = 0.3,
-    trafficFrequency = 0.0,
-    animalFrequency = 0.3,
+    pedFrequency = 1,
+    trafficFrequency = 1,
+    animalFrequency = 1,
 }
 
 Citizen.CreateThread(function()
