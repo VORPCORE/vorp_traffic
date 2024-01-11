@@ -3,6 +3,7 @@
 -- x must be a float type
 
 local config = {
+    pedtraffic = 1,
     pedFrequency = 1,
     trafficFrequency = 1,
     animalFrequency = 1,
@@ -13,8 +14,8 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
         
         -- Peds
-        Citizen.InvokeNative(0xAB0D553FE20A6E25,config.pedFrequency) -- SetAmbientPedDensityMultiplierThisFrame
-        Citizen.InvokeNative(0x7A556143A1C03898,config.pedFrequency) -- SetScenarioPedDensityMultiplierThisFrame
+        Citizen.InvokeNative(0xAB0D553FE20A6E25,config.pedtraffic) -- SetAmbientPedDensityMultiplierThisFrame
+        Citizen.InvokeNative(0x7A556143A1C03898,config.pedtraffic) -- SetScenarioPedDensityMultiplierThisFrame
         -- 0x95423627A9CA598E SetScenarioPedDensityThisFrame(configHash ) 
         --Valid configs:
         -- BLACKWATER
