@@ -1,5 +1,8 @@
 # vorp_traffic
-traffic management for redm
+Ambient traffic management for vorp core framework
 
-# vorp_traffic
-write on server.cfg : ensure vorp_traffic 
+* peds
+* vehciles
+
+# Installation
+ensure vorp_traffic `in your resources.cg file`
