@@ -1,8 +1,10 @@
 # vorp_traffic
 Ambient traffic management for vorp core framework
 
-* peds
-* vehciles
+- peds
+  - humans
+  - vehicles
+  - animals
 
 # Installation
-ensure vorp_traffic `in your resources.cg file`
+Place `ensure vorp_traffic` in your resources.cg file
