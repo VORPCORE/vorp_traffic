@@ -7,4 +7,4 @@ Ambient traffic management for vorp core framework
   - animals
 
 # Installation
-Place `ensure vorp_traffic` in your resources.cg file
+Place `ensure vorp_traffic` in your resources.cfg file
