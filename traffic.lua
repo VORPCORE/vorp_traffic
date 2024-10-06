@@ -3,10 +3,10 @@
 -- x must be a float type
 
 local config = {
-    pedtraffic = 1,
-    pedFrequency = 1,
-    trafficFrequency = 1,
-    animalFrequency = 1,
+    pedtraffic = 1.0,
+    pedFrequency = 1.0,
+    trafficFrequency = 1.0,
+    animalFrequency = 1.0,
 }
 
 Citizen.CreateThread(function()
@@ -35,7 +35,7 @@ Citizen.CreateThread(function()
         Citizen.InvokeNative(0xC0258742B034DFAF,config.animalFrequency) -- SetAmbientAnimalDensityMultiplierThisFrame
         Citizen.InvokeNative(0xDB48E99F8E064E56,config.animalFrequency) -- SetScenarioAnimalDensityMultiplierThisFrame
 
-        -- Vehicules
+        -- Vehicles
         Citizen.InvokeNative(0xFEDFA97638D61D4A,config.trafficFrequency) -- SetParkedVehicleDensityMultiplierThisFrame
         Citizen.InvokeNative(0x1F91D44490E1EA0C,config.trafficFrequency) -- SetRandomVehicleDensityMultiplierThisFrame
         Citizen.InvokeNative(0x606374EBFC27B133,config.trafficFrequency) -- SetVehicleDensityMultiplierThisFrame
